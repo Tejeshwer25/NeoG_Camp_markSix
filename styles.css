@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+
+:root {
+    --heading-font: "Merriweather",serif;
+    --text-font: "Kiwi Maru",serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #e8cb5b;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--heading-font);
+}
+
+.header > img {
+    width: 10%;
+}
+
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+section > p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+
+    font-family: var(--text-font);
+}
+
+section > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.25rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+}
+
+#output {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+
+    font-family: var(--heading-font);
+    font-style: italic;
+    text-align: left;
+}
+
+section img {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+section button {
+    margin: auto;
+}
+
+footer {
+    margin-top: 5rem;
+    background-color: #e8cb5b;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: sticky;
+    font-family: var(--heading-font);
+}
+
+footer > span {
+    color: red;
+}
+
+#btn {
+    border: 2px solid black;
+    background-color: #e8cb5b;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: block;
+    transition: all 0.3s ease-in-out
+}
+
+@media(min-width: 550px) {
+    section img {
+        display: inline;
+        width: 30%;
+    }
+
+    .input__section > div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media(min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section img {
+        display: inline;
+        width: 30%;
+    }
+}
