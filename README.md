@@ -1,4 +1,4 @@
-# NeoG_Camp_markSix
+# Mark-6: Minion Talk
 This web app converts any valid text into Minion Language. 
 
 ## Live Project
